@@ -1,0 +1,32 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../img/backgrround.avif');
+    background-size:cover;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    align-items: center;
+}
+
+h1 {
+    color:hsl(167, 92%, 30%);
+    font-weight:600;
+    margin: 30px;
+}
+
+button {
+    color: white;
+    background-color:hsl(167, 92%, 35%);
+    border: solid 3px;
+    border-color: hsl(167, 86%, 22%);
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    margin-inline: 20px;
+}
+
+button:hover {
+    color: white;
+    background-color:hsl(167, 81%, 28%);
+    border-color: hsl(167, 86%, 22%);
+    transition-duration: 0.5s;
+}
