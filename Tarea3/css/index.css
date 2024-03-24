@@ -1,0 +1,237 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+.banner1 {
+    height: 700px;
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+section {
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+}
+
+footer button {
+    margin-top: 5px;
+    position: flex;
+    margin-right: 20px;
+}
+
+footer button:hover {
+    color: white;
+    background-color: hsl(167, 81%, 28%);
+    border-color: hsl(167, 86%, 22%);
+    transition-duration: 0.5s;
+}
+
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.container1 {
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/*CHAT WHATAPP*/
+
+.container-botonws {
+    /*color de fondo imagen*/
+    background-color: #e4e4e4;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 3px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/*efecto de animación imagen chat*/
+
+.botonws {
+    width: 60px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+/*ICONO WHATAPP*/
+
+
+.whatsapp {
+    position: fixed;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    border-radius: 50%;
+    line-height: 20px;
+    font-size: 60px;
+    text-decoration: none;
+    transition: all 1s ease-in;
+
+}
+
+div .whatsapp:hover {
+    background-color: purple !important;
+}
+
+/* Etiquetas */
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: normal;
+    float: left;
+}
+
+
+
+/* Para agregar un borde cuando se activan los campos */
+
+input:hover {
+    outline: 3px solid brown;
+}
+
+textarea:hover {
+    outline: 3px solid brown;
+}
+
+
+/* Propiedades de los campos */
+
+input,
+textarea {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e2e2e2 !important;
+}
+
+
+/* Propiedades de los botones */
+
+.enviar {
+    width: 170px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #e7cdf5;
+    background-color: brown !important;
+}
+
+.borrar {
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #e7cdf5;
+    background-color: brown !important;
+}
+
+
+@media (max-width: 576px) {
+    H1{
+        font-size: 30px;
+    }
+    .container1 {
+        padding-top: 100px;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .banner1 {
+        height: 400px;
+
+    }
+
+    iframe{
+        width: auto;
+        height: fit-content;
+    }
+
+    h2, label{
+        font-size: 20px;
+    }
+    .logo{
+        width: 125px;
+    }
+
+    footer{
+        height: min-content;
+    }
+
+}
